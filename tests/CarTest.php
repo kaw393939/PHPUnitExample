@@ -5,6 +5,21 @@ use PHPUnit\Framework\TestCase;
 
 final class CarTest extends TestCase
 {
+
+
+    public function testArray() {
+
+
+        $car = new Volvo();
+
+        $CarColors = $car->carColor();
+        $this->assertArrayHasKey('one', $CarColors);
+        $this->assertArrayHasKey('two', $CarColors);
+        $this->assertArrayHasKey('three', $CarColors);
+
+
+    }
+
     public function testCanCreateVolvo(): void
     {
         $car = new Volvo();

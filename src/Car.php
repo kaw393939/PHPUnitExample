@@ -5,6 +5,8 @@ abstract class Car
 {
     public $wheels;
     public $make;
+    public $model;
+    public $year;
     public $doors;
     public $weight;
     public $engine;
@@ -17,6 +19,17 @@ abstract class Car
     public function decelerate() :int
     {
 
+    }
+
+    public function carColor() :array
+    {
+        $array = [
+            'one' => 'blue',
+            'two' => 'green',
+            'three'=> 'red'
+        ];
+
+        return $array;
     }
 }
 
